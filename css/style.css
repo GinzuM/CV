@@ -1,213 +1,190 @@
-/* Inicio do sonho*/
-body{
-		/* Textos padrões do site */
-		font-family: Nunito, sans-serif;
-		color: #1c1c1c; /* cor dos textos padrões */
+/* As estilizações são aplicadas primeiro da mais especifica para a mais geral */
+/* Corpo inteiro da pagina */
+body {
+    background-color: #ffaefa;/* Cor do fundo geral da página */
+    font-family: Nunito, sans-serif;/* Fonte padrão*/
+	color: #1c1c1c; /* Cor dos textos padrões */
+    padding: 0px;
 }
 h1, h2, h3{
-			font-family: Asap, sans-serif;
-			color: #000000; /* cor padrão dos titulos das seções */
+    font-family: Asap, sans-serif; /* Fonte padrão dos titulos h */
+    color: #000000; /* cor padrão dos titulos das seções */
 }
 .botao {
-		color: #ffffff;
-		text-decoration: none;
-		padding: 10px 30px;
-		background-color: #191970; /* cor padrão do fundo dos botoes */
-		font-size: .9em;
-		border-radius: 3px;
+    color: #ffffff;/* Cor dos textos dentro do botão */
+    text-decoration: none;/* estilização das letras */
+    padding: 5px 5px 5px 5px;/* Distancia da letra para a borda do botão */
+    /* Cima - Direita - Baixo - Esquerda */
+    /* Se colocar apenas 1 valor ele vai para todos*/ 
+    /* Se colocar 2 ele vão altera em espelhado (Cima_Baixo - Esquerda_Direita)*/
+    background-color: #191970; /* cor padrão do fundo dos botoes */
+    font-size: .9em;/* tamanho das letras dentro do botão */
+    border-radius: 3px;/* borda do botão arredondada */
 }
-/* Navegação */
+/* Barra de navegação */
+
 nav{
-		/* barra de navegação*/
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: #191970; /* cor do fundo da barra de navegação */
-}
-nav > a {
-			/* titulo da pagina*/
-			text-decoration: none;
-			color: #ffffff;
-			font-weight: 800;
-			font-size: 60px;
-			font-family: Yellowtail, serif;
-}
-nav ul{
-		/* espaço destinado aos botoes de navegação */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		list-style: none;
-		padding: 0;
-		width: 100%;
-}
-nav ul li{
-			/* separação dos botoes de navegação */
-			text-align: center;
-			width: 100%;
-}
-nav ul li a {
-				/* botoes das seções no topo */
-				display: inline-block;
-				padding: 10px 0;
-				width: 100%;
-				text-decoration: none;
-				color: #ffffff;
-				font-size: 50px;
-}
-header {
-		/* 1º seção */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-image: url("../img/imagem1.png");/* imagem 1 de fundo  */
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: #191970; /* cor do fundo da imagem */
-		color: #ffffff; 
-		text-align: center;
-		
-}
-header h1 {
-			color: #ffffff;/* cor do titulo da 1 seção*/
-			font-size: 50px;
-}
-header p{
+    /* barra de navegação*/
     display: flex;
-		text-align: center;
-		margin-bottom: 2em;
-		width: 70%;
-		font-size: 20px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2f7c7c; /* cor do fundo da barra de navegação */
 }
+    nav > a {
+        /* titulo da pagina*/
+        align-items: left;
+        text-decoration: none;/* Estilização*/
+        color: #423b3b; /* Cor*/
+        font-size: 100px; /* Tamanho da letra */
+        font-family: Yellowtail, serif; /* Fonte da letra */
+        padding: 0px 50px 0px 5px; /* espaçamento da borda */
+        background-color: #ffffff; /* cor de fundo do logo da pagina */
+        /* Cima - Direita - Baixo - Esquerda */
+    }
+    nav ul{
+        /* ESPAÇO dos botoes de navegação */
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0px 0px 0px 0px; /* espaçamento da borda */
+        width: 100%;
+    }
+        nav ul li{
+                /* botoes de navegação */
+                text-align: center;
+                width: 100%;
+                background-color: #ff0000;
+                padding: 10px;
+                border-radius: 50%;
+        }
+            nav ul li a {
+                        /* Texto dos botoẽs da barra de navegação*/
+                    padding: 0px 5px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 30px;
+            }
+
+/* Seção header - Apresentação */
+header {
+    /* 1º seção */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/imagem1.png");/* imagem 1 de fundo  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6161a8; /* cor do fundo da imagem */
+    color: #ffffff; 
+    text-align: center;
+    padding: 50px 0px;
+    
+}
+    header p{
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+    }
+/* Seção Curriculo */
 #Curriculo {
-		/* seção 2*/
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-image: url("../img/imagem3.jpeg");/* imagem 1 de fundo  */
-		background-repeat: no-repeat;
-		background-position: center;
-		text-align: center;
-		padding: 160px 10px;
-		background-color: #191970; /* cor do fundo da seção 2 */
-		color: #ffffff; /* cor do texto na seção 2*/
+    /* seção 2*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/imagem3.jpeg");/* imagem 1 de fundo  */
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 310px 0px;
+    /* Se colocar 2 ele vão altera em espelhado (Cima_Baixo - Esquerda_Direita)*/
+    background-color: #814499; /* cor do fundo da seção 2 */
+    color: #ffffff; /* cor do texto na seção 2*/
 }
-#Curriculo h2 {
-			color: #ffffff; /* cor do titulo da seção 2*/
-}
-#Curriculo p{
-			margin-bottom: 2.5em;
-			max-width: 1000px;
-}
-#Curriculo .botao {
-				background-color: #f1f1f1; /* cor do botão da seção 2 */
-				color: #1c1c1c; /* cor do texto dentro do botao na seção 2 */
-}
+/* Seção Cursos */
+
+/* Seção Linkedin */
 #Linkedin {
-			/* seção 3*/
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			font-size: 50px;
-			padding: 200px;
-			background-image: url("../img/imagem2.jpeg");/* imagem 2 na seção 3 */
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #191970; /* cor do fundo da imagem 2 na seção 3*/
-			
+    /* seção 3*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px;
+    background-image: url("../img/imagem2.jpeg");/* imagem 2 na seção 3 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #527055; /* cor do fundo da imagem 2 na seção 3*/
+    
 }
-#Linkedin .botao{
-					align-items: center;	
-					font-size: 15px;
+    #Linkedin h1 {
+        font-size: 100px;
+    }
+    #Linkedin .botao{
+                align-items: center;	
+                font-size: 20px;
+                padding: 10px;
+    }
+/* Seção Contato */
+#Contato {
+    /* seção de contato */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    background-color: #ffffff; /* cor do fundo da seção 4 */
+
 }
-#Topico3 {
-			/* seção de contato */
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			padding: 10px;
-			background-color: #ffffff /* cor do fundo da seção 4 */
-}
-#Topico3 h1 {
-      display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-}
-#Topico3 h2 {
-      display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			color: #000000; /* cor do titulo da seção 4 */
-}
+    #Contato h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        padding: 0px;
+        
+    }
+    #Contato p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fd0000; /* cor do titulo da seção 4 */
+        padding: 0px;
+    }
+    #Contato div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+    }
+        #Contato div1, #Contato div2, #Contato div3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px 10px;
+            background-color: #eef092;
+            border-radius: 20%;
+        }
+
+
+/* Seção Footer - Rodapé */
 footer {
-		/* rodapé */
-		text-align: center;
-		padding: 20px;
-		background-color: #191970; /* cor do fundo do rodapé */
-		color: #ffffff; /* cor do texto do rodapé */
+    /* seção do rodapé */
+    text-align: center; /*alinhamento do texto */
+    padding: 20px; /* espaçamento das bordas */
+    background-color: #00fff2; /* cor do fundo do rodapé */
 }
-footer a {
-			/* botao para voltar para cima*/
-			text-decoration: none;
-			color: #00ffff; /* cor do botao de voltar para cima*/
-}
-@media screen and (min-width: 768px) {
-	/* modificações para tela em tamanho diferente*/
-	/* NAV */
-	nav {
-			/* barra de navegação*/
-			flex-direction: row;
-			justify-content: space-around;
-	}
-	nav ul {
-			/* espaço destinado aos botoes de navegação */
-			flex-direction: row;
-			width: 70%;
-	}
-	/* cabeçalho *//* 1º seção */
-	header {
-			/* 1º seção */
-			height: 600px;
-			height: 60vh;
-			justify-content: center;
-	}
-	/* Sobre*//* 2º seção */
-	#Curriculo {
-			height: 250px;
-			height: 30vh;
-			justify-content: center;
-			min-height: 250px;
-	}
-	/* Serviços/Anuncios *//* 3º seção */
-	#Linkedin {
-				flex-direction: column;
-				flex-wrap: wrap;
-				align-items: center;
-				max-width: 2000px;
-				margin: 0 auto;
-	}
-	#Linkedin h2 {
-					text-align: center;
-					width: 100%;
-	}
-	#Linkedin div {
-					flex-grow: 1;
-					flex-basis: 150px;
-					padding: 0 10px;
-	}
-	/* Contato *//* 4º seção */
-	#Topico3 {
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: space-around;
-				max-width: 2000px;
-				margin: 0 auto;
-	}
-	#Topico3 h2, #Topico3 p {
-								width: 100%;
-	}
-}
-/* Acabou */
+    footer p {
+        color: #ff0000; /* cor do texto do rodapé */
+        /*posso colocar um fundo ou bordas usando o backgroun e padding */
+    }
+    footer a {
+            /* botao para voltar para cima*/
+            text-decoration: none;
+            color: #000000; /* cor do botao de voltar para cima*/
+            background-color: #708805; /* cor de fundo do botão */
+            padding: 5px; /*espaçamento das bordas */
+            border-radius: 25%;/*porcentagem de arredondamento das bordas */
+    }
