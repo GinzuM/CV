@@ -96,7 +96,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5em;
+    padding: 1em;
     background-color: #814499; /* cor do fundo da seção 2 */
 }
     #Curriculo img{
@@ -104,20 +104,32 @@ header {
         height: auto;
     }
 /* Seção Cursos */
-
+/*
+#Cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+    #Cursos h1 {
+        font-size: 25px; 
+    }
+    #Cursos div {
+    }
+*/
 /* Seção Linkedin */
 #Linkedin {
     /* seção 3*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5em;
+    padding: 2em;
     background-color: #527055; /* cor do fundo da imagem 2 na seção 3*/
     width: 100%;
     background-image: url("../img/imagem2.jpeg");/* imagem 2 na seção 3 */
 	background-repeat: no-repeat;
 	background-position: center;
-    background-size: 90%;
+    background-size: 75%;
 }
     #Linkedin h1 {
         font-size: 50px;
