@@ -38,8 +38,7 @@ nav{
         text-decoration: none;/* Estilização*/
         color: #423b3b; /* Cor*/
         font-size: 100px; /* Tamanho da letra */
-        font-family: Yellowtail, serif; /* Fonte da letra */
-        padding: 0px 15px 0px 5px; /* espaçamento da borda */
+        padding: 0px 5px; /* espaçamento da borda */
         background-color: #ffffff; /* cor de fundo do logo da pagina */
         border-radius: 20%;
         width:15%;
