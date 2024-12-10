@@ -2,9 +2,14 @@
 /* Corpo inteiro da pagina */
 body {
     background-color: #ffaefa;/* Cor do fundo geral da página */
+    background-image: url("../img/fundo.jpeg");/* imagem 2 na seção 3 */
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
     font-family: Nunito, sans-serif;/* Fonte padrão*/
 	color: #1c1c1c; /* Cor dos textos padrões */
     padding: 0px;
+    width: 99%;
 }
 h1, h2, h3{
     font-family: Asap, sans-serif; /* Fonte padrão dos titulos h */
@@ -28,7 +33,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #2f7c7c; /* cor do fundo da barra de navegação */
+    background-color: #090118a6; /* cor do fundo da barra de navegação */
     flex-wrap: wrap;
     width: 100%;
 }
@@ -37,7 +42,7 @@ nav{
         align-items: left;
         text-decoration: none;/* Estilização*/
         color: #423b3b; /* Cor*/
-        font-size: 100px; /* Tamanho da letra */
+        font-size: 100px ; /* Tamanho da letra */
         padding: 0px 5px; /* espaçamento da borda */
         background-color: #ffffff; /* cor de fundo do logo da pagina */
         border-radius: 20%;
@@ -61,17 +66,20 @@ nav{
                 text-align: center;
                 width: auto;
                 justify-content: space-around;
-                background-color: #ff0000;
-                padding: 0.5em;
-                border-radius: 50%;
+                background-color: #ffffffe7;
+                padding: 2em;
+                border-radius: 20%;
         }
             nav ul li a {
                         /* Texto dos botoẽs da barra de navegação*/
                     padding: 0px 0.5em;
                     text-decoration: none;
-                    color: #ffffff;
+                    color: #000000;
                     font-size: 20px;
             }
+body div13{
+    padding: 10%;
+}
 
 /* Seção header - Apresentação */
 header {
@@ -79,7 +87,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6161a8; /* cor do fundo da imagem */
+    background-color: #160f24bd; /* cor do fundo da imagem */
     color: #ffffff; 
     text-align: center;
     padding: 0.5em;
@@ -88,7 +96,7 @@ header {
     header p{
         display: flex;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
     }
 /* Seção Curriculo */
 #Curriculo {
@@ -97,47 +105,78 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    background-color: #814499; /* cor do fundo da seção 2 */
+    /*background-color: #814499;  cor do fundo da seção 2 */
 }
     #Curriculo img{
-        width: 45%;
+        width: 35%;
         height: auto;
     }
 /* Seção Cursos */
-/*
-#Cursos{
+#Cursos {
+    /* seção de Cursos */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1em;
+    /*background-color: #893af0;  cor do fundo da seção 4 */
+
 }
     #Cursos h1 {
-        font-size: 25px; 
+        font-size: 45px;
+        align-items: center;
+        text-align: center;
+        color: #000013;
     }
-    #Cursos div {
+    #Cursos div1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1em;
     }
-*/
+        #Cursos div2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1em;
+            background-color: #d3d7f1;
+            border-radius: 15%;
+            width: 20%;
+            max-width: 100%;
+            height: auto;
+        }
+            #Cursos div2 p1{
+                font-size: 17px;
+            }
+            #Cursos div2 p2{
+                font-size: 12px;
+                padding: 0.5em;
+            }
 /* Seção Linkedin */
 #Linkedin {
     /* seção 3*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
-    background-color: #527055; /* cor do fundo da imagem 2 na seção 3*/
-    width: 100%;
+    padding: 5em;
+    background-color: #0e121d; /*  cor do fundo da imagem 2 na seção 3*/
     background-image: url("../img/imagem2.jpeg");/* imagem 2 na seção 3 */
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: 75%;
+    
 }
     #Linkedin h1 {
         font-size: 50px;
+        color: #000000;
     }
     #Linkedin .botao{
                 align-items: center;	
                 font-size: 20px;
                 padding: 0.5em;
+                border-radius: 25%;
+                background-color: #066077;
     }
 /* Seção Contato */
 #Contato {
@@ -153,11 +192,13 @@ header {
         align-items: center;
         text-align: center;
         color: #000000;
-    }
+        font-size: 25px;
+        }
     #Contato p {
         align-items: center;
         text-align: center;
-        color: #fd0000; /* cor do titulo da seção 4 */
+        color: #000000; /* cor do titulo da seção 4 */
+        font-size: 12px;
     }
     #Contato div {
         display: flex;
@@ -166,12 +207,12 @@ header {
         width: 100%;
         height: auto;
     }
-        #Contato div1, #Contato div2, #Contato div3 {
+        #Contato div1{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 0.5em;
-            background-color: #eef092;
+            /*background-color: #eef092;*/
             border-radius: 20%;
             max-width: 100%;
             height: auto;
@@ -183,17 +224,17 @@ footer {
     /* seção do rodapé */
     text-align: center; /*alinhamento do texto */
     padding: 1em; /* espaçamento das bordas */
-    background-color: #00fff2; /* cor do fundo do rodapé */
+    /* background-color: #00fff2;  cor do fundo do rodapé */
 }
     footer p {
-        color: #ff0000; /* cor do texto do rodapé */
+        color: #000000; /* cor do texto do rodapé */
         /*posso colocar um fundo ou bordas usando o backgroun e padding */
     }
     footer a {
             /* botao para voltar para cima*/
             
-            color: #000000; /* cor do botao de voltar para cima*/
-            background-color: #708805; /* cor de fundo do botão */
+            color: #ffffff; /* cor do botao de voltar para cima*/
+            background-color: #000013; /* cor de fundo do botão */
             padding: 0.5em; /*espaçamento das bordas */
             border-radius: 25%;/*porcentagem de arredondamento das bordas */
     }
